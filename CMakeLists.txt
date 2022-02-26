@@ -68,7 +68,7 @@ else()
     set(JPEG_INCLUDE_DIRS ${JPEG})
     set(JPEG_LIBRARIES    "jpeg")  # will result in libjpeg
 
-    file(GLOB_RECURSE SRCS_JPEG "${JPEG_PATH}/*.c")
+    file(GLOB_RECURSE SRCS_JPEG "${JPEG_PATH}/*.cpp")
     add_library(${JPEG_LIBRARIES} SHARED ${SRCS_JPEG})
 endif()
 
